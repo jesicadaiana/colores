@@ -1,14 +1,3 @@
-//Agregar: 
-/*
-
-
-, "
-    */
-
-
-
-
-
 
 const nombresColores = [
   "aliceblue", "antiquewhite", "aqua", "aquamarine", "azure", "beige", "bisque",
@@ -60,38 +49,22 @@ const codigosColores = [
   "#40E0D0", "#EE82EE", "#F5DEB3", "#FFFFFF", "#F5F5F5", "#FFFF00", "#9ACD32"
 ];
 
-/* Función para obtener un elemento aleatorio del array
-for (i in nombreColor) {
-  console.log (nombreColor[i].innerHTML) 
-} */
+/* Función para obtener un elemento aleatorio del array */
 
 const nombreColor = document.querySelectorAll('.nombreColor'); //parrafos nombre coleccion
-const fondo = document.getElementsByClassName('.fondo')
+const fondo = document.getElementsByClassName('fondo')
 
 function obtenerColorAleatorio() {
-  for (let i = 0; i < nombreColor.length ; i++ ) {
+  for (let i = 0; i < nombreColor.length; i++) {
     let colorAleatorio = Math.floor(Math.random() * nombresColores.length);
     console.log('%cNombre: ', 'color:red', nombresColores[colorAleatorio]);
     console.log('%cCodigo: ', 'color:red', codigosColores[colorAleatorio]);
-    fondo[i] = codigosColores[colorAleatorio];
-    nombreColor[i] = nombresColores[colorAleatorio];
+    fondo[i].innerHTML = nombresColores[colorAleatorio];
+    nombreColor[i].innerHTML = codigosColores[colorAleatorio];
+    fondo[i].style.backgroundColor = codigosColores[colorAleatorio];
+    nombreColor[i].style.color = codigosColores[colorAleatorio];
+
   }
 }
 
-
-
-
-/*
-
-
-  for (let i = 0; i < 5; i++) {
-    let colorAleatorio = Math.floor(Math.random() * nombresColores.length);
-    console.log('%cCodigo interno: ', 'color:red', nombresColores[colorAleatorio]);
-    console.log('%cCodigo interno: ', 'color:red', codigosColores[colorAleatorio]);
-    fondo[i] = codigosColores[colorAleatorio];
-    //nombreColor = nombresColores[colorAleatorio];
-    console.log('En fondo hay:', fondo[i]);
-  }
-}
-*/
 
