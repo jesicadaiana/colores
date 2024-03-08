@@ -12,14 +12,16 @@
 
          <!-- Fuentes-->
          <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+                  rel="stylesheet">
 
 
 
 </head>
 
-<body>
+<body> 
+         <!--
          <nav class="navbar navbar-expand-lg bg-body-tertiary">
                   <div class="container-fluid">
                            <img src="images/rainbow.ico" alt="" width="10%"><a class="navbar-brand" href="#"></a></img>
@@ -45,34 +47,43 @@
                                     </ul>
                            </div>
                   </div>
-         </nav>
+         </nav> 
 
-         <main>
                   <h1>Paletas de colores </h1>
-                  <h3>Crea paletas de colores increibles con solo un click! </h3>
+                  <h3>Crea paletas de colores increibles con solo un click! </h3> -->
 
-                  <div class="contenedor">
+<main>
 
-                           <div class="color">
-                                    <p>#C0C0C0</p>
-                           </div>
-                           <div class="color">
-                                    <p>#AA8754</p>
-                           </div>
-                           <div class="color">
-                                    <p>##FF339D</p>
-                           </div>
-                           <div class="color">
-                                    <p>#800080</p>
-                           </div>
+         <div class="contenedorPrincipal">
 
+                  <div class="fondo">
+                           <p class="nombreColor">#C0C0C0</p>
                   </div>
-                  <div class="contenedorBoton">
-                           <button type="button" role="button" class="button-64" id=cambiarColor" onclick="cambioDeColor()"> Generar Paleta! </button>
+                  <div class="fondo">
+                           <p class="nombreColor">#AA8754</p>
                   </div>
-         </main>
-         <script src="script.js">
-         </script>
+                  <div class="fondo">
+                           <p class="nombreColor">#FF339D</p>
+                  </div>
+                  <div class="fondo">
+                           <p class="nombreColor">#800080</p>
+                  </div>
+
+         </div>
+
+         <div class="contenedorBoton">
+                  <!--Boton -->
+                  <div>
+                           <button type="button" id="aleatorio" onclick="obtenerColorAleatorio()">Obtener Color Aleatorio</button>
+                  </div>
+         </div>
+
+</main>
+
+
+         <!-- JS-->
+         <script src="script.js"></script>
+
 </body>
 
 </html>
