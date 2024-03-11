@@ -59,12 +59,11 @@ function obtenerColorAleatorio() {
     let colorAleatorio = Math.floor(Math.random() * nombresColores.length);
     console.log('%cNombre: ', 'color:red', nombresColores[colorAleatorio]);
     console.log('%cCodigo: ', 'color:red', codigosColores[colorAleatorio]);
-    fondo[i].innerHTML = nombresColores[colorAleatorio];
-    nombreColor[i].innerHTML = codigosColores[colorAleatorio];
     fondo[i].style.backgroundColor = codigosColores[colorAleatorio];
-    nombreColor[i].style.color = codigosColores[colorAleatorio];
-
+    nombreColor[i].style.color = "black";
+    nombreColor[i].innerHTML = nombresColores[colorAleatorio];
   }
 }
+
 
 

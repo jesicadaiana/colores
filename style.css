@@ -19,17 +19,39 @@
 }
 
 p {
-         font-size: 1.3em;
+         font-size: 1.1em;
          background-color: aliceblue;
+         color: black;
+         padding: 7px;
+         }
+
+.fondo:nth-child(1) {
+         background-color: #00FFFF;
+         padding: 5px ;
+}
+.fondo:nth-child(2) {
+         background-color: #006400;
+         padding: 5px ;
+}
+.fondo:nth-child(3) {
+         background-color: #FFFACD;
+         padding: 5px ;
+}
+.fondo:nth-child(4) {
+         background-color: #D2B48C;
+         padding: 5px ;
 }
 
+.contenedorNombreColor {
+         width: 70%;
+}
 
 /* boton */
 
 .contenedorBoton {
          display: flex;
          justify-content: center;
-         margin: 20px auto;
+         padding: 20px ;
 }
 
 .buttonGenerar {
