@@ -83,12 +83,10 @@ p {
          
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
          .buttonGenerar {
                   font-size: 1.5em;
                   min-width: 196px;
                   width: 80vw;
-                  border: 2px solid darkblue;
-
          }
 }

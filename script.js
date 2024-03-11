@@ -53,6 +53,9 @@ const codigosColores = [
 
 const nombreColor = document.querySelectorAll('.nombreColor'); //parrafos nombre coleccion
 const fondo = document.getElementsByClassName('fondo')
+const  textoPaletaCompleta = document.getElementById ('textoPaletaCompleta');
+
+
 
 function obtenerColorAleatorio() {
   for (let i = 0; i < nombreColor.length; i++) {
@@ -63,6 +66,7 @@ function obtenerColorAleatorio() {
     nombreColor[i].style.color = "black";
     nombreColor[i].innerHTML = nombresColores[colorAleatorio];
   }
+
 }
 
 
