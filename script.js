@@ -54,8 +54,8 @@ const codigosColores = [
 const nombreColor = document.querySelectorAll('.nombreColor'); //parrafos nombre coleccion
 const fondo = document.getElementsByClassName('fondo')
 const  textoPaletaCompleta = document.getElementById ('textoPaletaCompleta');
-
-
+const arrayAcumulativoNombre = [];
+const arrayAcumulativoCodigo = [];
 
 function obtenerColorAleatorio() {
   for (let i = 0; i < nombreColor.length; i++) {
@@ -65,8 +65,10 @@ function obtenerColorAleatorio() {
     fondo[i].style.backgroundColor = codigosColores[colorAleatorio];
     nombreColor[i].style.color = "black";
     nombreColor[i].innerHTML = nombresColores[colorAleatorio];
+    arrayAcumulativoNombre += nombresColores[colorAleatorio];
+    arrayAcumulativoCodigo += codigosColores[colorAleatorio];
   }
-
+  textoPaletaCompleta.innerText = 'La paleta es: ' + arrayAcumulativoNombre + ' y los codigos' + arrayAcumulativoCodigo ;
 }
 
 

@@ -80,10 +80,9 @@ p {
 .buttonGenerar:active,
 .buttonGenerar:hover {
          outline: 0;
-         
 }
 
-@media (max-width: 1200px) {
+@media ( 300px <= width <= 1024px ) {
          .buttonGenerar {
                   font-size: 1.5em;
                   min-width: 196px;
