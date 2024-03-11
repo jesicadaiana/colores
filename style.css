@@ -128,6 +128,23 @@ li {
 }
 
 
+
+.contenedorPaletaCompleta {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+
+}
+
+.contenedorBotonPaletaCompleta  {
+         margin: 5px auto;
+}
+
+.buttonDescarga {
+         background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
 /* Footer Styles */
 
 .footer-copyright  {

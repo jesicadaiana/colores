@@ -15,7 +15,8 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
                   rel="stylesheet">
-                  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">        
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+                  rel="stylesheet">
 
 
          <!-- Compiled and minified CSS -->
@@ -27,38 +28,50 @@
 
          <!-- Fuentes Awesome -->
          <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
-         
+
 </head>
 
 <body>
          <nav>
                   <div class="nav-wrapper #212121 grey darken-4">
-                      <a href="#" class="brand-logo"><img src="/images/29320.png" class="logo-img" width="50px" alt="Logo de la pagina"></a>
-                           
-                  
-                      <ul id="nav-mobile" class="right hide-on-med-and-down">
-                          <li><a href="index.html">Inicio</a></li>
-                          <li><a href="#">Recursos Web</a></li>
-                          <li><a href="#">Contacto</a></li>
-                      </ul>
-                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
-                  </div>
-              </nav>
+                           <a href="#" class="brand-logo"><img src="/images/29320.png" class="logo-img" width="50px"
+                                             alt="Logo de la pagina"></a>
 
-              <!-- Menu desplegable -->
-              <ul class="sidenav #7986cb indigo lighten-2"  id="mobile-demo">
+
+                           <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="#">Recursos Web</a></li>
+                                    <li><a href="#">Contacto</a></li>
+                           </ul>
+                           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                             class="fa-solid fa-bars"></i></a>
+                  </div>
+         </nav>
+
+         <!-- Menu desplegable -->
+         <ul class="sidenav #7986cb indigo lighten-2" id="mobile-demo">
                   <li><a href="index.html">Inicio</a></li>
                   <li><a href="#">Recursos Web</a></li>
                   <li><a href="#">Contacto</a></li>
-              </ul>
+         </ul>
 
-              
+
 
          <main>
                   <h1 class="titulos">Paletas de colores </h1>
                   <h3 class="subtitulos ">Crea y visualiza los nombres de paletas de colores con solo un click! </h3>
 
                   <div class="contenedorPrincipal">
+
+                           <div class="contenedorBoton">
+
+                                    <!--Boton -->
+                                    <div>
+                                             <button type="button" id="aleatorio" class="buttonGenerar"
+                                                      onclick="obtenerColorAleatorio()">Obtener Colores
+                                                      Aleatorio</button>
+                                    </div>
+                           </div>
 
                            <div class="colores">
                                     <div class="fondo">
@@ -84,19 +97,16 @@
 
                            </div>
 
-                           <div class="contenedorBoton">
-                                    <!--Boton -->
-                                    <div>
-                                             <button type="button" id="aleatorio" class="buttonGenerar"
-                                                      onclick="obtenerColorAleatorio()">Obtener Colores
-                                                      Aleatorio</button>
-                                    </div>
-                           </div>
-
 
                            <div class="contenedorPaletaCompleta">
-                                    <h2 class="titulos"> Paleta completa: </h2>
-                                    <p id="textoPaletaCompleta"></p>
+                                    <!--Boton Desacargar Paleta Completa -->
+                                             <h2 class="titulos"> Exporta tu código de paleta completa: </h2>
+                                             <p id="textoPaletaCompleta"></p>
+                                             <div class="contenedorBotonPaletaCompleta">
+                                                      <button type="button" id="" class="buttonGenerar buttonDescarga"
+                                                      onclick="">Copiar Paleta Completa</button>
+                                             </div
+                                    </div>
                            </div>
          </main>
 
@@ -141,9 +151,9 @@
          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
          <script>
-             $(document).ready(function () {
-                 $('.sidenav').sidenav();
-             });
+                  $(document).ready(function () {
+                           $('.sidenav').sidenav();
+                  });
          </script>
          <!-- jQuery se encarga de la manipulación del DOM y otras operaciones JavaScript, Materialize utiliza jQuery para su funcionalidad y proporciona estilos y componentes basados en Material Design ( sistema de diseño desarrollado por Google)-->
 
