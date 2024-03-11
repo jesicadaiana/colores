@@ -3,33 +3,21 @@
          box-sizing: border-box;
 }
 
-
-.navbar {
-         background-color: #b55bcc;
-         display: flex;
-         list-style: none;
-
-}
-
-.navbar-brand {
-         color: #fff;
-         font-weight: bold;
-         padding: 5px;
-}
-
 li {
          font-family: "Montserrat", sans-serif;
          text-transform: uppercase;
 }
-.navbar-nav .nav-link {
-         color: #8FBC8F;
-         text-decoration: none;
 
+.logo-img {
+         object-fit: contain;
+         margin: 5px auto;
+     }
+
+.brand-logo {
+         width: 10%;
+         text-align: center;
+         overflow: hidden;
 }
-
-/* Footer Styles */
-
-
 .colores {
          display: flex;
          justify-content: center;
@@ -138,6 +126,9 @@ li {
                   width: 80vw;
          }
 }
+
+
+/* Footer Styles */
 
 .footer-copyright  {
          font-family: "Montserrat", sans-serif;
