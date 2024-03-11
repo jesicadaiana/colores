@@ -8,9 +8,10 @@
          justify-content: center;
          flex-direction: row;
 }
+
 .colores div {
          width: 25vw;
-         margin: 0 2px ;
+         margin: 0 2px;
          height: 90vh;
 }
 
@@ -23,23 +24,26 @@ p {
          background-color: aliceblue;
          color: black;
          padding: 7px;
-         }
+}
 
 .fondo:nth-child(1) {
          background-color: #00FFFF;
-         padding: 5px ;
+         padding: 5px;
 }
+
 .fondo:nth-child(2) {
          background-color: #006400;
-         padding: 5px ;
+         padding: 5px;
 }
+
 .fondo:nth-child(3) {
          background-color: #FFFACD;
-         padding: 5px ;
+         padding: 5px;
 }
+
 .fondo:nth-child(4) {
          background-color: #D2B48C;
-         padding: 5px ;
+         padding: 5px;
 }
 
 .contenedorNombreColor {
@@ -52,7 +56,7 @@ p {
 .contenedorBoton {
          display: flex;
          justify-content: center;
-         padding: 20px ;
+         padding: 20px;
          width: 100vw;
 }
 
@@ -82,10 +86,17 @@ p {
          outline: 0;
 }
 
-@media ( 300px <= width <= 1024px ) {
+@media (300px <=width <=1024px) {
          .buttonGenerar {
                   font-size: 1.5em;
                   min-width: 196px;
                   width: 80vw;
          }
+
+         .buttonGenerar {
+                  align-items: center;
+                  background-image: linear-gradient(144deg, #b55bcc, #f34268 50%, #eb0091);
+                  border: 0;
+         }
+
 }
