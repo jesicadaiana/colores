@@ -15,6 +15,7 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
                   rel="stylesheet">
+                  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">        
 
 
          <!-- Compiled and minified CSS -->
@@ -28,26 +29,30 @@
 </head>
 
 <body>
-
          <nav>
-                  <div class="nav-wrapper">
-                           <a href="#" class="brand-logo right">Jessi Acosta</a>
-                           <ul id="nav-mobile" class="left hide-on-med-and-down">
-                                    <li><a href="sass.html">Inicio</a></li>
-                                    <li><a href="badges.html">Paletas de colores</a></li>
-                                    <li><a href="collapsible.html">JavaScript</a></li>
-                           </ul>
+                  <div class="nav-wrapper #212121 grey darken-4">
+                      <a href="#" class="brand-logo"><img src="/images/ffg.png" width="80px" alt=""></a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                          <li><a href="index.html">Inicio</a></li>
+                          <li><a href="#">Recursos Web</a></li>
+                          <li><a href="#">Contacto</a></li>
+                      </ul>
+                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   </div>
-         </nav>
+              </nav>
 
+              <!-- Menu desplegable -->
+              <ul class="sidenav #7986cb indigo lighten-2"  id="mobile-demo">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="#">Recursos Web</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
 
-
-
-         <h1>Paletas de colores </h1>
-         <h3>Crea paletas de colores increibles con solo un click! </h3>
-
+              
 
          <main>
+                  <h1 class="titulos">Paletas de colores </h1>
+                  <h3 class="subtitulos ">Crea y visualiza los nombres de paletas de colores con solo un click! </h3>
 
                   <div class="contenedorPrincipal">
 
@@ -79,39 +84,47 @@
                                     <!--Boton -->
                                     <div>
                                              <button type="button" id="aleatorio" class="buttonGenerar"
-                                                      onclick="obtenerColorAleatorio()">Obtener Color Aleatorio</button>
+                                                      onclick="obtenerColorAleatorio()">Obtener Colores
+                                                      Aleatorio</button>
                                     </div>
                            </div>
 
 
                            <div class="contenedorPaletaCompleta">
-                                    <h2 class="tituloPaletaCompleta"> Paleta completa: </h2>
+                                    <h2 class="titulos"> Paleta completa: </h2>
                                     <p id="textoPaletaCompleta"></p>
                            </div>
          </main>
 
-         <footer class="page-footer">
-                  <div class="container">
+         <footer class="page-footer #212121 grey darken-4">
+                  <div class="container center ">
                            <div class="row">
                                     <div class="col l6 s12">
                                              <h5 class="white-text"></h5>
                                              <p class="grey-text text-lighten-4"></p>
+                                             <span><img src="images/ffg.png" width="180px" alt="Logo Dev"></span>
                                     </div>
-                                    <div class="col l4 offset-l2 s12">
+
+                                    <div class="col l4 offset-l2 s12 ">
                                              <h5 class="white-text">Redes</h5>
                                              <ul>
-                                                      <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/jesiacosta_/">Instagram</a>
+                                                      <li><a class="grey-text text-lighten-3"
+                                                                        href="https://www.instagram.com/jesiacosta_/">Instagram</a>
                                                       </li>
-                                                      <li><a class="grey-text text-lighten-3" href="https://github.com/jesicadaiana">Github</a></li>
-                                                      <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jesicadaiana/">Linkdin</a></li>
+                                                      <li><a class="grey-text text-lighten-3"
+                                                                        href="https://www.linkedin.com/in/jesicadaiana/">Linkedin</a>
+                                                      </li>
                                              </ul>
                                     </div>
                            </div>
+
                   </div>
-                  <div class="footer-copyright">
-                           <div class="container">
+
+                  <div class="footer-copyright #616161 grey darken-3 ">
+                           <div class="container  ">
                                     © 2024 Copyright Jessi Acosta
-                                    <a class="grey-text text-lighten-4 right" href="https://github.com/jesicadaiana">Repositorio </a>
+                                    <a class="grey-text text-lighten-4 right"
+                                             href="https://github.com/jesicadaiana">Repositorio Git Hub </a>
                            </div>
                   </div>
          </footer>
@@ -119,6 +132,18 @@
 
          <!-- JS-->
          <script src="script.js"></script>
+
+         <!--  jQuery y Materialize JavaScript  -->
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         <script>
+             $(document).ready(function () {
+                 $('.sidenav').sidenav();
+             });
+         </script>
+         <!-- jQuery se encarga de la manipulación del DOM y otras operaciones JavaScript, Materialize utiliza jQuery para su funcionalidad y proporciona estilos y componentes basados en Material Design ( sistema de diseño desarrollado por Google)-->
+
+
 
 </body>
 

@@ -8,38 +8,40 @@
          background-color: #b55bcc;
          display: flex;
          list-style: none;
-         border: 2px solid red;
+
 }
 
 .navbar-brand {
          color: #fff;
          font-weight: bold;
-
+         padding: 5px;
 }
 
+li {
+         font-family: "Montserrat", sans-serif;
+         text-transform: uppercase;
+}
 .navbar-nav .nav-link {
-         color: #fff;
+         color: #8FBC8F;
          text-decoration: none;
+
 }
 
 /* Footer Styles */
-footer {
-         background-color: #f34268;
-         color: #fff;
-         padding: 30px 0;
-         display: flex;
-         justify-content: center;
-}
-
-footer h4 {
-         color: #fff;
-}
 
 
 .colores {
          display: flex;
          justify-content: center;
          flex-direction: row;
+}
+
+.titulos {
+         font-size: 1.7em;
+         font-weight: bold;
+}
+.subtitulos {
+         font-size: 1.1em;
 }
 
 .colores div {
@@ -80,13 +82,18 @@ footer h4 {
          display: flex;
          width: 70%;
          text-align: center;
+         justify-content: center;
 }
 
 .contenedorNombreColor p {
+         text-align: center;
          font-size: 1.1em;
+         font-weight: bold;
          background-color: aliceblue;
+         width: 90%;
          color: black;
          padding: 7px;
+         border-radius: 5px;
 }
 
 /* boton */
@@ -113,7 +120,7 @@ footer h4 {
          line-height: 1em;
          max-width: 100%;
          min-width: 140px;
-         padding: 5px;
+         padding: 15px;
          text-decoration: none;
          cursor: pointer;
 }
@@ -130,4 +137,10 @@ footer h4 {
                   min-width: 196px;
                   width: 80vw;
          }
+}
+
+.footer-copyright  {
+         font-family: "Montserrat", sans-serif;
+         text-transform: uppercase;
+         font-weight: bold;
 }

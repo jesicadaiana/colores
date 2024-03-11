@@ -64,11 +64,13 @@ function obtenerColorAleatorio() {
     console.log('%cCodigo: ', 'color:red', codigosColores[colorAleatorio]);
     fondo[i].style.backgroundColor = codigosColores[colorAleatorio];
     nombreColor[i].style.color = "black";
-    textoPaletaCompleta.innerHTML = 'texto insertado desde funcion'
-    arrayAcumulativoNombre += [nombresColores[colorAleatorio]];
-    arrayAcumulativoCodigo += codigosColores[colorAleatorio]
+    nombreColor[i].innerHTML = nombresColores[colorAleatorio];
   }
-  textoPaletaCompleta.innerHTML ='La paleta es: ' + arrayAcumulativoNombre + ' y los codigos' + arrayAcumulativoCodigo ;
+  /*
+  textoPaletaCompleta.innerHTML = 'texto insertado desde funcion'
+  arrayAcumulativoNombre += [nombresColores[colorAleatorio]];
+  arrayAcumulativoCodigo += codigosColores[colorAleatorio]
+  textoPaletaCompleta.innerHTML ='La paleta es: ' + arrayAcumulativoNombre + ' y los codigos' + arrayAcumulativoCodigo ;*/
 }
 
 
