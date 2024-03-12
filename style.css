@@ -8,6 +8,13 @@ li {
          text-transform: uppercase;
          font-size: 23px;
 }
+p {
+    font-size: 25px;
+}
+
+.mobileLinks {
+    font-size: 2em;
+}
 
 .logo-img {
          object-fit: contain;
@@ -26,11 +33,11 @@ li {
 }
 
 .titulos {
-         font-size: 1.7em;
+         font-size: 2em;
          font-weight: bold;
 }
 .subtitulos {
-         font-size: 1.1em;
+         font-size: 1.5em;
 }
 
 .colores div {
@@ -76,7 +83,6 @@ li {
 
 .contenedorNombreColor p {
          text-align: center;
-         font-size: 1.1em;
          font-weight: bold;
          background-color: aliceblue;
          width: 90%;
@@ -104,7 +110,7 @@ li {
          font-family: "Mukta", sans-serif;
          font-weight: 500;
          font-style: normal;
-         font-size: 1.3em;
+         font-size: 1.5em;
          justify-content: center;
          line-height: 1em;
          max-width: 100%;
