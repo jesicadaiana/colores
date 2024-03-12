@@ -12,9 +12,6 @@ p {
     font-size: 25px;
 }
 
-.mobileLinks {
-    font-size: 2em;
-}
 
 .logo-img {
          object-fit: contain;
@@ -40,6 +37,10 @@ p {
          font-size: 1.5em;
 }
 
+ul.sidenav li .mobileLinks {
+    font-size: 25px;
+}
+
 .colores div {
          display: flex;
          width: 25vw;
@@ -51,6 +52,7 @@ p {
 
 .fondo {
          text-align: center;
+         cursor: pointer;
 }
 
 
