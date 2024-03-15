@@ -12,6 +12,9 @@ body {
 }
 main {
     background-color: #000000;
+    padding: 20px;
+    margin-top: 50px;
+
 }
 
 p {
@@ -19,7 +22,7 @@ p {
     font-size: 1.2em;
 }
 body h1 {
-    font-size: 1.9em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     margin: 10px auto;
@@ -96,6 +99,7 @@ ul.sidenav li .mobileLinks {
 }
 
 .contenedorNombreColor p {
+    font-size: 1.2em;
     text-align: center;
     font-weight: bold;
     background-color: aliceblue;
