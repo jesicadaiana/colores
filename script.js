@@ -49,7 +49,7 @@ const codigosColores = [
   "#40E0D0", "#EE82EE", "#F5DEB3", "#FFFFFF", "#F5F5F5", "#FFFF00", "#9ACD32"
 ];
 
-/* Función para obtener un elemento aleatorio del array */
+/* Función para obtener un nombreColor aleatorio del array */
 
 const nombreColor = document.querySelectorAll('.nombreColor'); //parrafos nombre coleccion
 const fondo = document.getElementsByClassName('fondo')
@@ -72,6 +72,8 @@ function obtenerColorAleatorio() {
   arrayAcumulativoCodigo += codigosColores[colorAleatorio]
   textoPaletaCompleta.innerHTML ='La paleta es: ' + arrayAcumulativoNombre + ' y los codigos' + arrayAcumulativoCodigo ;*/
 }
+
+
 
 
 
