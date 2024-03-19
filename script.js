@@ -53,19 +53,30 @@ const codigosColores = [
 
 const nombreColor = document.querySelectorAll('.nombreColor'); //parrafos nombre coleccion
 const fondo = document.getElementsByClassName('fondo')
-const  textoPaletaCompleta = document.getElementById ('textoPaletaCompleta');
-const arrayAcumulativoNombre = [];
-const arrayAcumulativoCodigo = [];
+const codigoColor = document.querySelectorAll ('.codigosColores')
+
 
 function obtenerColorAleatorio() {
   for (let i = 0; i < nombreColor.length; i++) {
-    let colorAleatorio = Math.floor(Math.random() * nombresColores.length);
-    console.log('%cNombre: ', 'color:red', nombresColores[colorAleatorio]);
-    console.log('%cCodigo: ', 'color:red', codigosColores[colorAleatorio]);
-    fondo[i].style.backgroundColor = codigosColores[colorAleatorio];
-    nombreColor[i].style.color = "black";
-    nombreColor[i].innerHTML = nombresColores[colorAleatorio];
+    let colorAleatorio = Math.floor(Math.random() * nombresColores.length); //numero aleatorio para i
+    fondo[i].style.backgroundColor = codigosColores[colorAleatorio]; 
+    nombreColor[i].innerHTML = nombresColores[colorAleatorio];    
+    codigoColor[i].innerHTML = codigosColores[colorAleatorio];
+
+    nombreColor[i].style.textOverflow = "ellipsis";
   }
+
+  const textoPaletaCompleta = document.getElementById ('textoPaletaCompleta');
+  const arrayAcumulativoNombre = [];
+  const arrayAcumulativoCodigo = [];
+
+
+  function paletaCompleta () {
+
+  }
+
+
+  
   /*
   textoPaletaCompleta.innerHTML = 'texto insertado desde funcion'
   arrayAcumulativoNombre += [nombresColores[colorAleatorio]];

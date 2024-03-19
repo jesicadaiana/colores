@@ -10,8 +10,6 @@ body {
     background-color: #000000;
 }
 
-main {
-}
 
 .titulos {
     color: #00FFFF;
@@ -20,8 +18,9 @@ main {
     font-size: 30px;
 }
 .subtitulo {
-    color: #e7fa3d;
-    font-size: .5em;
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
 }
 
 .logo-img {
@@ -58,6 +57,9 @@ ul.sidenav li .mobileLinks:hover {
     font-weight: bold;
 }
 
+
+/* MAIN */
+
 .colores div {
     display: flex;
     width: 25vw;
@@ -65,9 +67,6 @@ ul.sidenav li .mobileLinks:hover {
     height: 50vh;
     justify-content: center;
     align-items: end;
-}
-
-.fondo {
     text-align: center;
     cursor: pointer;
     padding-bottom: 10px;
@@ -89,20 +88,21 @@ ul.sidenav li .mobileLinks:hover {
     background-color: #D2B48C;
 }
 
+
+
 .contenedorNombreColor {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+    padding: 0 5px;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: #fff;
+    width: 100%;
 }
 
 .contenedorNombreColor p {
-    text-align: center;
     font-weight: bold;
     color: black;
-    padding: 2px;
 }
+
+
 
 /* boton */
 .contenedorBoton {
