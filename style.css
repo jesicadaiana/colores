@@ -7,32 +7,23 @@
 }
 
 body {
-    background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
-    opacity: 0.9;
+    background-color: #000000;
 }
 
 main {
-    background-color: #000000;
-    padding: 20px;
-    margin-top: 50px;
 }
 
-p {
-    color: #fff;
-    font-size: 1.2em;
-}
- h1 {
-    font-size: 1.5em;
-    font-weight: bold;
+.titulos {
+    color: #00FFFF;
     text-align: center;
-    margin: 10px auto;
-    color: #ff0998;
-}
- h2,  h3,  h4 {
-    color: #e7fa3d;
-    font-size: 1.1em;
     font-weight: bold;
+    font-size: 30px;
 }
+.subtitulo {
+    color: #e7fa3d;
+    font-size: .5em;
+}
+
 .logo-img {
     object-fit: contain;
     margin: 5px auto;
@@ -196,10 +187,13 @@ ul.sidenav li .mobileLinks:hover {
 .footer-copyright {
     text-transform: uppercase;
     font-weight: bold;
+    color: #eb0091;
 }
-.grey-text { /*Redes Footer */
+.colorLink { /*Redes Footer */
     text-transform: uppercase;
     font-weight: bold;
+    color: #000000;
+    font-size: 1.3em;
 }
 
 
