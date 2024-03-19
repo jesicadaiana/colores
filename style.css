@@ -21,16 +21,16 @@ p {
     color: #fff;
     font-size: 1.2em;
 }
-body h1 {
-    font-size: 2em;
+ h1 {
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     margin: 10px auto;
     color: #ff0998;
 }
-body h2, body h3, body h4 {
+ h2,  h3,  h4 {
     color: #e7fa3d;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 .logo-img {
@@ -61,7 +61,7 @@ ul.sidenav li .mobileLinks {
 .colores div {
     display: flex;
     width: 25vw;
-    margin: 0 2px;
+    margin: 0 5px;
     height: 50vh;
     justify-content: center;
     align-items: end;
@@ -151,6 +151,18 @@ ul.sidenav li .mobileLinks {
         min-width: 196px;
         width: 80vw;
     }
+    .contenedorNombreColor{
+        width: 100vw;
+        margin: 0;
+    }
+.colores div {
+    height: 60vh;
+    width: 25%;
+    margin: 2px;
+}
+.colores {
+    padding: 0;
+}
 }
 
 
@@ -192,20 +204,9 @@ ul.sidenav li .mobileLinks {
     background-color: #000000;
 }
 
-.mainPagJs h1 {
-    font-size: 1.9em;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px auto;
-    color: #fff;
-}
+
 .mainPagJs h1:hover , .mainPagJs h2:hover  , .mainPagJs h3:hover {
     color: #f4f80a;
-}
-
-.mainPagJs h2 , .mainPagJs h3{
-    font-size: 1.3em;
-    font-weight: bold;
 }
 
 
