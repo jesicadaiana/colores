@@ -70,44 +70,38 @@ ul.sidenav li .mobileLinks:hover {
 .fondo {
     text-align: center;
     cursor: pointer;
+    padding-bottom: 10px;
 }
-
 
 .fondo:nth-child(1) {
     background-color: #00FFFF;
-    padding: 5px;
 }
 
 .fondo:nth-child(2) {
     background-color: #006400;
-    padding: 5px;
 }
 
 .fondo:nth-child(3) {
     background-color: #FFFACD;
-    padding: 5px;
 }
 
 .fondo:nth-child(4) {
     background-color: #D2B48C;
-    padding: 5px;
 }
 
 .contenedorNombreColor {
     display: flex;
-    width: 70%;
-    text-align: center;
-    justify-content: center;
     flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    background-color: aliceblue;
 }
 
 .contenedorNombreColor p {
-    font-size: 1em;
     text-align: center;
     font-weight: bold;
-    background-color: aliceblue;
     color: black;
-    border-radius: 5px;
+    padding: 2px;
 }
 
 /* boton */
@@ -116,6 +110,7 @@ ul.sidenav li .mobileLinks:hover {
     justify-content: center;
     padding: 10px;
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .buttonGenerar {
