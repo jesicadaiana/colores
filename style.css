@@ -52,10 +52,19 @@ p {
     opacity: 1;
 }
 
+/*Nav Mobile */
+.sidenav li:nth-child(1){
+    padding-top: 50px;
+}
 ul.sidenav li .mobileLinks {
-    font-size: 1.2em;
-    margin-top: 30px;
+    font-size: 1.8em;
+    margin-top: 20px;
     color: #fff;
+}
+
+ul.sidenav li .mobileLinks:hover {
+    color: #5B42F3;
+    font-weight: bold;
 }
 
 .colores div {
