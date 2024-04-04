@@ -6,6 +6,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 main {
     background-color: #000;
     padding: 20px 0;
@@ -269,9 +270,7 @@ ul.sidenav li .mobileLinks:hover {
 
 .cajaInfU { 
     text-align: center;
-    margin: 5px 20px ;
-    background-color: #fff;
-    border: 3px solid #00FFFF;
+
 }
 
 .cajaInfU a { 
@@ -280,15 +279,23 @@ ul.sidenav li .mobileLinks:hover {
     font-size: 1.2em;
 }
 
+.cajaInfU p {
+    color: #FFF;
+}
 .cajaImg {
     height: 50%;
-    width: 90%;
+    width: 70%;
     padding: 10px;
     margin: 20px auto;
+    background-color: #fff;
+    border: 3px solid #00FFFF;
 }
 .cajaImg img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     text-align: center;
+}
+.cajaVideosYt p {
+    color: #fff;
 }
