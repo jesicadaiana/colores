@@ -15,8 +15,9 @@ body {
     color: #00FFFF;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
-}
+    font-size: 1,5em;
+  }
+
 .subtitulo {
     color: #fff;
     font-size: 1.1em;
@@ -59,6 +60,9 @@ ul.sidenav li .mobileLinks:hover {
 
 
 /* MAIN */
+
+
+
 
 .colores div {
     display: flex;
@@ -188,7 +192,7 @@ ul.sidenav li .mobileLinks:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 
@@ -231,11 +235,17 @@ ul.sidenav li .mobileLinks:hover {
 .videoContainer p {
     margin-top: 10px; 
     font-size: .9em;
+    color: #fff;
 }
 
 
 .historialVersiones {
     margin: 50px;
+    color: #fff;
+}
+.titulo-versiones {
+    color: #5fb816;
+    font-size: 1.3em;
 }
 
 .listaDeLinks li {
@@ -258,3 +268,32 @@ ul.sidenav li .mobileLinks:hover {
 }
 
 
+
+
+
+
+/*RECURSOS*/
+
+.cajaInfU { 
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.cajaInfU a { 
+    color: #eb0091;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cajaImg {
+    height: 50%;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+}
+.cajaImg img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    text-align: center;
+}
