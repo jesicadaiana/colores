@@ -6,42 +6,34 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
-    background-color: #000000;
+main {
+    background-color: #000;
+    padding: 20px 0;
 }
 
-
 .titulos {
-    color: #00FFFF;
+    color: #5fb816;
     text-align: center;
-    font-weight: bold;
     font-size: 1,5em;
   }
 
 .subtitulo {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-align: center;
-}
-
-.logo-img {
-    object-fit: contain;
-    margin: 5px auto;
 }
 
 .brand-logo {
-    width: 10%;
+    height: 90%;
     text-align: center;
-    overflow: hidden;
 }
-.colores {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 20px;
-    background-color: black;
-    opacity: 1;
+.logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
+
+
 
 /*Nav Mobile */
 .sidenav li:nth-child(1){
@@ -67,15 +59,19 @@ ul.sidenav li .mobileLinks:hover {
 .colores div {
     display: flex;
     width: 25vw;
-    margin: 0 5px;
-    height: 50vh;
+    height: 40vh;
+    margin: 0 2px;
     justify-content: center;
     align-items: end;
     text-align: center;
     cursor: pointer;
-    padding-bottom: 10px;
 }
-
+.colores {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    opacity: 1;
+}
 .fondo:nth-child(1) {
     background-color: #00FFFF;
 }
@@ -92,21 +88,18 @@ ul.sidenav li .mobileLinks:hover {
     background-color: #D2B48C;
 }
 
-
-
 .contenedorNombreColor {
-    padding: 0 5px;
+    width: 90%;
     justify-content: center;
     background-color: #fff;
-    width: 100%;
+    padding: 0;
 }
 
 .contenedorNombreColor p {
-    font-weight: bold;
     color: black;
+    object-fit: cover;
+    margin: 0;
 }
-
-
 
 /* boton */
 .contenedorBoton {
@@ -151,7 +144,7 @@ ul.sidenav li .mobileLinks:hover {
         width: 80vw;
     }
     .contenedorNombreColor{
-        width: 100vw;
+        width: 90%;
         margin: 0;
     }
 .colores div {
@@ -276,7 +269,9 @@ ul.sidenav li .mobileLinks:hover {
 
 .cajaInfU { 
     text-align: center;
-    background-color: #ffffff;
+    margin: 5px 20px ;
+    background-color: #fff;
+    border: 3px solid #00FFFF;
 }
 
 .cajaInfU a { 
