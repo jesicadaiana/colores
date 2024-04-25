@@ -15,8 +15,8 @@ main {
 .titulos {
     color: #5fb816;
     text-align: center;
-    font-size: 1,5em;
-  }
+    font-size: 1, 5em;
+}
 
 .subtitulo {
     color: #fff;
@@ -28,18 +28,21 @@ main {
     height: 90%;
     text-align: center;
 }
+
 .logo-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    padding: 5px;
 }
 
 
 
 /*Nav Mobile */
-.sidenav li:nth-child(1){
+.sidenav li:nth-child(1) {
     padding-top: 50px;
 }
+
 ul.sidenav li .mobileLinks {
     font-size: 1.8em;
     margin-top: 20px;
@@ -60,19 +63,21 @@ ul.sidenav li .mobileLinks:hover {
 .colores div {
     display: flex;
     width: 25vw;
-    height: 40vh;
+    height: 70vh;
     margin: 0 2px;
     justify-content: center;
     align-items: end;
     text-align: center;
     cursor: pointer;
 }
+
 .colores {
     display: flex;
     justify-content: center;
     flex-direction: row;
     opacity: 1;
 }
+
 .fondo:nth-child(1) {
     background-color: #00FFFF;
 }
@@ -127,7 +132,7 @@ ul.sidenav li .mobileLinks:hover {
     line-height: 1em;
     max-width: 100%;
     min-width: 140px;
-    padding: 10px 2px;
+    padding: 10px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -137,26 +142,7 @@ ul.sidenav li .mobileLinks:hover {
     outline: 0;
 }
 
-@media (300px <=width <=1024px) {
-    .buttonGenerar {
-        font-size: 2em;
-        height: auto;
-        min-width: 196px;
-        width: 80vw;
-    }
-    .contenedorNombreColor{
-        width: 90%;
-        margin: 0;
-    }
-.colores div {
-    height: 60vh;
-    width: 25%;
-    margin: 2px;
-}
-.colores {
-    padding: 0;
-}
-}
+
 
 
 .contenedorPaletaCompleta {
@@ -164,11 +150,17 @@ ul.sidenav li .mobileLinks:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 20px auto;
+}
+
+.contenedorBotonPaletaCompleta>h2 {
+    margin: 20px auto;
+    border: 2px solid red;
 
 }
 
 .contenedorBotonPaletaCompleta {
-    margin: 5px auto;
+    margin: 20px auto;
 }
 
 .buttonDescarga {
@@ -182,7 +174,9 @@ ul.sidenav li .mobileLinks:hover {
     font-weight: bold;
     color: #eb0091;
 }
-.colorLink { /*Redes Footer */
+
+.colorLink {
+    /*Redes Footer */
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
@@ -191,52 +185,68 @@ ul.sidenav li .mobileLinks:hover {
 
 
 
-/* Pagina js*/
-
-
+/*  ECMASCRIPT  */
 
 .mainPagJs {
-    padding: 50px;
     background-color: #000000;
 }
 
-
-.mainPagJs h1:hover , .mainPagJs h2:hover  , .mainPagJs h3:hover {
-    color: #f4f80a;
+.contenedorMain {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
+
+.contenedorImagenes {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+.contenedorMainimagen1 ,
+.contenedorMainimagen2, .contenedorMainimagen3 {
+    margin: 10px auto;
+}
+
 
 
 .videoContainer {
     text-align: center;
 }
+
 .videoFHD {
-    height: 40vh;
-    display: flex; 
-    justify-content: center; 
-    border-top: 2px solid #f4f80a;
-    border-bottom: 2px solid #f4f80a;
-    padding: 30px 0;
-    }
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
 
 .videoYT {
-    max-width: 100%; 
+    max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    width: 800px;
-
+    width: 80%;
 }
 
 .videoContainer p {
-    margin-top: 10px; 
     font-size: .9em;
     color: #fff;
 }
-
+.animate__lightSpeedInLeft {
+    color: #5fb816;
+    text-align: center;
+}
+.mainPagJs h1:hover,
+.mainPagJs h2:hover,
+.mainPagJs h3:hover {
+    color: #f4f80a;
+}
 
 .historialVersiones {
-    margin: 50px;
+   margin: 20px ;
     color: #fff;
 }
+
 .titulo-versiones {
     color: #5fb816;
     font-size: 1.3em;
@@ -268,12 +278,13 @@ ul.sidenav li .mobileLinks:hover {
 
 /*RECURSOS*/
 
-.cajaInfU { 
+/*PAGINAS RECOMENDADAS*/
+.cajaInfU {
     text-align: center;
 
 }
 
-.cajaInfU a { 
+.cajaInfU a {
     color: #eb0091;
     font-weight: bold;
     font-size: 1.2em;
@@ -281,7 +292,9 @@ ul.sidenav li .mobileLinks:hover {
 
 .cajaInfU p {
     color: #FFF;
+
 }
+
 .cajaImg {
     height: 50%;
     width: 70%;
@@ -290,12 +303,83 @@ ul.sidenav li .mobileLinks:hover {
     background-color: #fff;
     border: 3px solid #00FFFF;
 }
+
 .cajaImg img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
     text-align: center;
 }
+
 .cajaVideosYt p {
     color: #fff;
+    border: 3px solid #75e40d;
+
+}
+
+.contenedorSeccionVideos {
+    text-align: center;
+    height: auto; 
+}
+
+.videoCanales {
+    max-width: 500px; 
+    margin: 20px auto; 
+    padding: 20px 15px ;
+    width: 40%;
+}
+
+.videoYtSeccion {
+    width: 100%; 
+    height: 250px;
+}
+
+.videoCanales p {
+    margin: 20px auto;
+    color: #FFF;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+
+/*MOBILE*/
+
+@media (300px <=width <=1024px) {
+    .buttonGenerar {
+        font-size: 2em;
+        height: auto;
+        min-width: 196px;
+        width: 80vw;
+    }
+
+    .contenedorNombreColor {
+        width: 90%;
+        margin: 0;
+    }
+
+    .colores div {
+        height: 60vh;
+        width: 25%;
+        margin: 2px;
+    }
+
+    .colores {
+        padding: 0;
+    }
+
+    .contenedorMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.contenedorImagenes {
+    width: 90vw;
+}
+.videoFHD{
+    height: 100%;
+}
+.listaDeLinks > li{
+    padding: 10px;
+}
 }

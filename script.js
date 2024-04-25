@@ -71,8 +71,8 @@ function obtenerColorAleatorio() {
   const arrayAcumulativoCodigo = [];
 
 
-  function paletaCompleta () {
-
+  function copiarPaleta() {
+    
   }
 
 
