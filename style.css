@@ -4,12 +4,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
 main {
-    background-color: #000;
+    background-color: #f5ecd0;
     padding: 20px 0;
 }
 
@@ -20,9 +20,9 @@ main {
 }
 
 .subtitulo {
-    color: #fff;
-    font-size: 1.3em;
-    text-align: center;
+    color: #000;
+    font-size: 1.2em;
+    text-align: left;
 }
 
 .brand-logo {
@@ -46,7 +46,7 @@ main {
 ul.sidenav li .mobileLinks {
     font-size: 1.4em;
     margin-top: 20px;
-    color: #fff;
+    color: #000;
 }
 
 ul.sidenav li .mobileLinks:hover {
@@ -58,13 +58,39 @@ ul.sidenav li .mobileLinks:hover {
 /* MAIN */
 
 
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
+ }
+ .nav-wrapper > a {
+ }
+ 
+
+ /* COLORES */
+.secccionInfoColores {
+    background-color: #f5ecd0;
+    padding: 10px;
+}
+.secccionInfoColores p {
+}
+ .contenedorImgPcpal {
+    width: 100%;
+
+ }
+.contenedorImgPcpal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 50px auto;
+}
 
 
 .colores div {
     display: flex;
-    width: 25vw;
+    width: 20vw;
     height: 70vh;
-    margin: 0 2px;
+    margin: 30px 2px;
     justify-content: center;
     align-items: end;
     text-align: center;
@@ -76,22 +102,23 @@ ul.sidenav li .mobileLinks:hover {
     justify-content: center;
     flex-direction: row;
     opacity: 1;
+    padding: 10px;
 }
 
 .fondo:nth-child(1) {
-    background-color: #00FFFF;
+    background-color: aliceblue;
 }
 
 .fondo:nth-child(2) {
-    background-color: #006400;
+    background-color: antiquewhite;
 }
 
 .fondo:nth-child(3) {
-    background-color: #FFFACD;
+    background-color: #f4f80a;
 }
 
 .fondo:nth-child(4) {
-    background-color: #D2B48C;
+    background-color: #7fff00;
 }
 
 .contenedorNombreColor {
@@ -173,15 +200,14 @@ ul.sidenav li .mobileLinks:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #b55bcc;
-    background-color: red;
 }
 
 .colorLink {
     /*Redes Footer */
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFF;
-    font-size: 1.3em;
+    color: #000;
+    font-size: 1.1em;
     text-decoration: none;
 }
 
@@ -190,21 +216,25 @@ ul.sidenav li .mobileLinks:hover {
 /*  RECURSOS JS  */
 
 .mainPagJs {
-    background-color: #000000;
+    background-color: #f5ecd0;
 }
 
 .contenedorMain {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5px;
     justify-content: center;
     align-items: center;
+
 }
 
 .contenedorImagenes {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 100vw;
+}
+.contenedorImagenes img {
+    width: 90%;
 }
 .contenedorMainimagen1 ,
 .contenedorMainimagen2, .contenedorMainimagen3 {
@@ -232,7 +262,7 @@ ul.sidenav li .mobileLinks:hover {
 
 .videoContainer p {
     font-size: 1.2em;
-    color: #fff;
+    color: #000;
 }
 .animate__lightSpeedInLeft {
     color: #b55bcc;
@@ -246,7 +276,7 @@ ul.sidenav li .mobileLinks:hover {
 
 .historialVersiones {
    margin: 20px ;
-    color: #fff;
+    color: #000;
 }
 
 .titulo-versiones {
@@ -256,12 +286,14 @@ ul.sidenav li .mobileLinks:hover {
 
 .listaDeLinks li {
     text-transform: lowercase;
-    color: #fff;
+    color: #000;
 }
 
 .listaDeLinks a {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #AF40FF;
+
 }
 
 .listaDeLinks li::before {
@@ -269,7 +301,6 @@ ul.sidenav li .mobileLinks:hover {
 }
 
 .listaDeLinks li :hover {
-    color: #006400;
     background-color: #f4f80a;
 }
 
@@ -287,12 +318,11 @@ ul.sidenav li .mobileLinks:hover {
 
 .cajaInformativaRecursos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     margin: 20px;
-    background-color: rgb(44, 44, 44);
-    color: #fff;
+    color: #000;
 }
 .cajaInformativaRecursos a {
     font-size: 1.4em;
@@ -301,10 +331,9 @@ ul.sidenav li .mobileLinks:hover {
 
 .cajaImg {
     flex: 1;
-    width: 50%;
+    width: 90%;
     height: 90%;
     margin: 0;
-
 }
 .cajaImg img {
     width: 100%;
@@ -324,7 +353,7 @@ ul.sidenav li .mobileLinks:hover {
 }
 
 .cajaInformativaParrafo >a{
-    color: #00DDEB;
+    color: #5B42F3;
     text-align: center;
 }
 
@@ -343,12 +372,12 @@ ul.sidenav li .mobileLinks:hover {
 
 .videoYtSeccion {
     width: 100%; 
-    height: 250px;
+    height: 380px;
 }
 
 .videoCanales p {
     margin: 20px auto;
-    color: #FFF;
+    color: #000;
     font-size: 1.2em;
 }
 
@@ -397,3 +426,4 @@ ul.sidenav li .mobileLinks:hover {
     display: block;
     }
 }
+
