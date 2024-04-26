@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    font-size: 22px;
 }
 
 
@@ -15,12 +16,12 @@ main {
 .titulos {
     color: #b55bcc;
     text-align: center;
-    font-size: 1.9em;
+    font-size: 1.5em;
 }
 
 .subtitulo {
     color: #fff;
-    font-size: 1.6em;
+    font-size: 1.3em;
     text-align: center;
 }
 
@@ -43,7 +44,7 @@ main {
 }
 
 ul.sidenav li .mobileLinks {
-    font-size: 1.8em;
+    font-size: 1.4em;
     margin-top: 20px;
     color: #fff;
 }
@@ -180,7 +181,7 @@ ul.sidenav li .mobileLinks:hover {
     text-transform: uppercase;
     font-weight: bold;
     color: #FFF;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-decoration: none;
 }
 
@@ -230,7 +231,7 @@ ul.sidenav li .mobileLinks:hover {
 }
 
 .videoContainer p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
 }
 .animate__lightSpeedInLeft {
@@ -250,7 +251,7 @@ ul.sidenav li .mobileLinks:hover {
 
 .titulo-versiones {
     color: #b55bcc;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .listaDeLinks li {
@@ -294,7 +295,7 @@ ul.sidenav li .mobileLinks:hover {
     color: #fff;
 }
 .cajaInformativaRecursos a {
-    font-size: 1.6em;
+    font-size: 1.4em;
     margin: 10px auto;
 }
 
@@ -348,7 +349,7 @@ ul.sidenav li .mobileLinks:hover {
 .videoCanales p {
     margin: 20px auto;
     color: #FFF;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 
