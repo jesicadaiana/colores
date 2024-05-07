@@ -6,7 +6,28 @@
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
 }
+p {
+    font-size: 1em;
+}
+.colorLinkBlanco {
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none; /* Sin decoración */
+}
 
+.colorLinkOscuro{
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: #05AFF2;
+    text-decoration: none; /* Sin decoración */
+    
+}
+.colorLinkOscuro::before {
+    content: "▶️  ";
+}
 
 main {
     background-color: #f5ecd0;
@@ -61,25 +82,24 @@ ul.sidenav li .mobileLinks:hover {
 .nav-wrapper {
     position: fixed;
     top: 0;
-    z-index: 9999; /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
- }
- .nav-wrapper > a {
- }
- 
+    z-index: 9999;
+    /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
+}
 
- /* COLORES */
+
+/* COLORES */
 .secccionInfoColores {
     background-color: #f5ecd0;
     padding: 10px;
 }
-.secccionInfoColores p {
-}
- .contenedorImgPcpal {
-    width: 100%;
 
- }
-.contenedorImgPcpal img {
+.contenedorImgPcpal {
     width: 100%;
+    text-align: center;
+}
+
+.contenedorImgPcpal img {
+    width: 60%;
     height: 100%;
     object-fit: cover;
     margin: 50px auto;
@@ -198,17 +218,8 @@ ul.sidenav li .mobileLinks:hover {
 .footer-copyright {
     text-transform: uppercase;
     font-weight: bold;
-    color: #b55bcc;
 }
 
-.colorLink {
-    /*Redes Footer */
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000;
-    font-size: 1.1em;
-    text-decoration: none;
-}
 
 
 
@@ -243,11 +254,8 @@ ul.sidenav li .mobileLinks:hover {
     justify-content: center;
 }
 
-.videoContainer p {
-    font-size: 1.2em;
-    color: #000;
-}
-.animate__lightSpeedInLeft { /*titulo*/
+.animate__lightSpeedInLeft {
+    /*titulo*/
     color: #b55bcc;
     text-align: center;
 }
@@ -257,18 +265,28 @@ ul.sidenav li .mobileLinks:hover {
 .mainPagJs h3:hover {
     color: #f34268;
 }
+
 @keyframes cambioColor {
-    0% {color: #5B42F3;} 
-    50% {color: #b55bcc;} 
-   100% {color: #00DDEB;} 
+    0% {
+        color: #5B42F3;
+    }
+
+    50% {
+        color: #b55bcc;
+    }
+
+    100% {
+        color: #00DDEB;
+    }
 }
+
 .historialVersiones {
-   margin: 20px ;
+    margin: 20px;
     color: #000;
 }
 
 .titulosAnimados {
-    animation-name: cambioColor ;
+    animation-name: cambioColor;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
@@ -276,16 +294,10 @@ ul.sidenav li .mobileLinks:hover {
 .titulo-versiones p {
     text-wrap: pretty;
 }
+
 .listaDeLinks li {
     text-transform: lowercase;
     color: #000;
-}
-
-.listaDeLinks a {
-    font-size: 1.1em;
-    text-decoration: none;
-    color: #AF40FF;
-
 }
 
 .listaDeLinks li::before {
@@ -306,7 +318,7 @@ ul.sidenav li .mobileLinks:hover {
     padding: 20px;
 }
 
-.cajaInformativaRecursos{
+.cajaInformativaRecursos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -314,6 +326,7 @@ ul.sidenav li .mobileLinks:hover {
     margin: 20px;
     color: #000;
 }
+
 .cajaInformativaRecursos a {
     font-size: 1.4em;
     margin: 10px auto;
@@ -325,6 +338,7 @@ ul.sidenav li .mobileLinks:hover {
     height: 90%;
     margin: 0;
 }
+
 .cajaImg img {
     width: 100%;
     height: 100%;
@@ -335,33 +349,26 @@ ul.sidenav li .mobileLinks:hover {
     flex: 1;
     padding: 20px;
 }
-.cajaInformativaParrafo >p{
-    margin: 10px auto;
-}
-.cajaInformativaParrafo >p::before {
-    content: "  ➡️  ";
-}
 
-.cajaInformativaParrafo >a{
-    color: #5B42F3;
-    text-align: center;
+.cajaInformativaParrafo>p {
+    margin: 10px auto;
 }
 
 
 /*VIDEOS DE YOUTUBE*/
 .contenedorSeccionVideos {
-    height: auto; 
+    height: auto;
     padding: 10px;
 }
 
 .videoCanales {
-    max-width: 500px; 
-    margin: 20px auto; 
+    max-width: 500px;
+    margin: 20px auto;
     width: 40%;
 }
 
 .videoYtSeccion {
-    width: 100%; 
+    width: 100%;
     height: 380px;
 }
 
@@ -375,6 +382,12 @@ ul.sidenav li .mobileLinks:hover {
 /*MOBILE*/
 
 @media (300px <=width <=1024px) {
+
+    .contenedorImgPcpal img {
+        width: 90%;
+
+    }
+
     .buttonGenerar {
         font-size: 2em;
         height: auto;
@@ -401,19 +414,21 @@ ul.sidenav li .mobileLinks:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
-}
+    }
 
-.contenedorImagenes {
-    width: 90vw;
-}
-.videoFHD{
-    height: 100%;
-}
-.listaDeLinks > li{
-    padding: 10px;
-}
-.cajaInformativaRecursos{
-    display: block;
+    .contenedorImagenes {
+        width: 90vw;
+    }
+
+    .videoFHD {
+        height: 100%;
+    }
+
+    .listaDeLinks>li {
+        padding: 10px;
+    }
+
+    .cajaInformativaRecursos {
+        display: block;
     }
 }
-
