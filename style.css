@@ -286,6 +286,8 @@ ul.sidenav li .mobileLinks:hover {
 }
 
 .titulosAnimados {
+    font-size: 1.3em;
+    text-align: center;
     animation-name: cambioColor;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -314,29 +316,23 @@ ul.sidenav li .mobileLinks:hover {
 /*RECURSOS*/
 
 /*PAGINAS RECOMENDADAS*/
-.cajasInformativas {
-    padding: 20px;
-}
 
 .cajaInformativaRecursos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
+    margin: 20px auto ;
     color: #000;
+    padding: 5px;
 }
-
-.cajaInformativaRecursos a {
-    font-size: 1.4em;
-    margin: 10px auto;
+.cajaInformativaRecursos p {
+    font-size: .9em;
 }
 
 .cajaImg {
     flex: 1;
     width: 90%;
     height: 90%;
-    margin: 0;
+    margin: 10px auto ;
 }
 
 .cajaImg img {
@@ -345,26 +341,21 @@ ul.sidenav li .mobileLinks:hover {
     object-fit: cover;
 }
 
-.cajaInformativaParrafo {
-    flex: 1;
-    padding: 20px;
-}
-
-.cajaInformativaParrafo>p {
-    margin: 10px auto;
-}
-
 
 /*VIDEOS DE YOUTUBE*/
 .contenedorSeccionVideos {
+    width: 100vw;
     height: auto;
-    padding: 10px;
+    padding: 20px;
+    border: 2px solid red;
+
 }
 
 .videoCanales {
     max-width: 500px;
-    margin: 20px auto;
-    width: 40%;
+    width: 30%;
+    margin: 30px auto;
+
 }
 
 .videoYtSeccion {
@@ -375,7 +366,7 @@ ul.sidenav li .mobileLinks:hover {
 .videoCanales p {
     margin: 20px auto;
     color: #000;
-    font-size: 1.2em;
+    font-size: .9em;
 }
 
 
@@ -419,9 +410,11 @@ ul.sidenav li .mobileLinks:hover {
     .contenedorImagenes {
         width: 90vw;
     }
-
+.contenedorSeccionVideos {
+    display: block;
+}
     .videoFHD {
-        height: 100%;
+        width: 100%;
     }
 
     .listaDeLinks>li {
