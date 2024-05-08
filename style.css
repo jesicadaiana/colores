@@ -72,9 +72,11 @@ footer {
 ul.sidenav li .mobileLinks {
     font-size: 1.2em;
     position: relative;
-    top: 40px;
+    top: 30px;
     background-color: #6f7cbd;
     border-radius: 5px;
+    margin: 20px;
+    text-align: center;
 }
 
 ul.sidenav li .mobileLinks:hover {
@@ -86,8 +88,7 @@ ul.sidenav li .mobileLinks:hover {
 }
 .fa-bars { /*barradesplegable responsive*/
     font-size: 2em!important;
-    margin: auto;
-    margin: auto;
+    padding: 10px;
 }
 .nav-wrapper  {
     height: 7vh!important;
