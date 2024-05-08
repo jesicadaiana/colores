@@ -6,44 +6,42 @@
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
 }
+
 p {
     font-size: 1em;
 }
+
 .colorLinkBlanco {
     text-transform: lowercase;
     font-weight: bold;
     font-size: 1em;
     color: #ffffff;
-    text-decoration: none; /* Sin decoración */
+    text-decoration: none;
+    /* Sin decoración */
 }
 
-.colorLinkOscuro{
+.colorLinkOscuro {
     text-transform: lowercase;
     font-weight: bold;
     font-size: 1em;
     color: #05AFF2;
-    text-decoration: none; /* Sin decoración */
-    
+    text-decoration: none;
+    /* Sin decoración */
+
 }
+
 .colorLinkOscuro::before {
     content: "▶️  ";
 }
 
 main {
     background-color: #f5ecd0;
-    padding: 20px 0;
 }
 
 .titulos {
     color: #b55bcc;
     text-align: center;
     font-size: 1.5em;
-}
-
-.subtitulo {
-    color: #000;
-    font-size: 1.2em;
-    text-align: left;
 }
 
 .brand-logo {
@@ -58,33 +56,36 @@ main {
     padding: 5px;
 }
 
+.sidenav-trigger { /*Barras menu*/
+}
 
 /*Nav Mobile */
-.sidenav li:nth-child(1) {
-    padding-top: 50px;
+.sidenav li:nth-child(1) { /*primer hijo nav*/
+    margin-top: 70px;
 }
 
 ul.sidenav li .mobileLinks {
-    font-size: 1.4em;
-    margin-top: 20px;
-    color: #000;
+    margin: 20px auto;
+    font-size: 1em;
 }
 
 ul.sidenav li .mobileLinks:hover {
     color: #5B42F3;
     font-weight: bold;
 }
-
-
-/* MAIN */
-
-
-.nav-wrapper {
+.sidenav   {
+    width: 40vw!important;
+}
+.nav-wrapper  {
+    height: 7vh!important;
+}
+nav {
     position: fixed;
     top: 0;
     z-index: 9999;
     /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
 }
+
 
 
 /* COLORES */
@@ -321,10 +322,11 @@ ul.sidenav li .mobileLinks:hover {
 .cajaInformativaRecursos {
     display: flex;
     flex-direction: column;
-    margin: 20px auto ;
+    margin: 20px auto;
     color: #000;
     padding: 5px;
 }
+
 .cajaInformativaRecursos p {
     font-size: .9em;
 }
@@ -333,7 +335,7 @@ ul.sidenav li .mobileLinks:hover {
     flex: 1;
     width: 90%;
     height: 90%;
-    margin: 10px auto ;
+    margin: 10px auto;
 }
 
 .cajaImg img {
@@ -348,7 +350,6 @@ ul.sidenav li .mobileLinks:hover {
     width: 100vw;
     height: auto;
     padding: 20px;
-    border: 2px solid red;
 
 }
 
@@ -377,7 +378,6 @@ ul.sidenav li .mobileLinks:hover {
 
     .contenedorImgPcpal img {
         width: 90%;
-
     }
 
     .buttonGenerar {
@@ -411,9 +411,11 @@ ul.sidenav li .mobileLinks:hover {
     .contenedorImagenes {
         width: 90vw;
     }
-.contenedorSeccionVideos {
-    display: block;
-}
+
+    .contenedorSeccionVideos {
+        display: block;
+    }
+
     .videoFHD {
         width: 100%;
     }
