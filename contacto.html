@@ -51,18 +51,20 @@
                                              width="40px" alt="Logo de la pagina"></a>
 
 
+                                                      <!--Menu Pnatallas-->
                            <ul id="nav-mobile" class="right hide-on-med-and-down">
                                     <li><a href="index.html" class="colorLinkBlanco">Inicio</a></li>
                                     <li> <a href="js.html" class="colorLinkBlanco">Historia de JS </a></li>
                                     <li><a href="recursos.html" class="colorLinkBlanco">Recursos JS </a></li>
                                     <li><a href="contacto.html" class="colorLinkBlanco">Contacto</a></li>
+
                            </ul>
                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
                                              class="fa-solid fa-bars"></i></a>
                   </div>
          </nav>
 
-         <!-- Menu desplegable -->
+         <!-- Menu Mobile -->
          <ul class="sidenav #7986cb indigo lighten-2" id="mobile-demo">
                   <li><a href="index.html" class="mobileLinks colorLinkBlanco">Inicio</a></li>
                   <li> <a href="js.html" class="mobileLinks colorLinkBlanco">Historia de JS </a></li>
@@ -71,18 +73,16 @@
          </ul>
 
 
-    <main>
+    <main class="mainContacto">
         <!-- Título -->
         <h1 class="titulos animate__animated animate__bounce">Contacto</h1>
 
         <!-- Información de contacto -->
         <section id="informacion-contacto" class="secccionInfoColores">
             <p>
-                ¡Hola! Soy Jesica, desarrolladora web especializada en diseño frontend. y actualmente estudiante de Ingenieria Mecatrónica, especializandome en Back End. 
-                Si tienes alguna pregunta o por contrataciones , no dudes en ponerte en contacto conmigo. Estoy acá para ayudarte en lo que necesites.
-            </p>
-            <p>
-                Puedes contactarme a través del siguiente correo electrónico:
+                ¡Hola! Soy Jesica, Programadora - Desarrolladora web frontend. y estudiante de Ingenieria Mecatrónica. <br>
+                Si tienes alguna pregunta o por contrataciones , no dudes en ponerte en contacto conmigo.  <br>
+            Podés contactarme a través del siguiente correo electrónico:
                 <a href="mailto:tu@email.com" class="colorLinkBlanco">ajesicadaiana@email.com</a>
             </p>
         </section>
@@ -90,16 +90,17 @@
         <!-- Formulario de contacto -->
         <section id="formulario-contacto" class="secccionInfoColores">
             <h2 class="titulosAnimados">Envíame un mensaje</h2>
-            <form action="enviar.php" method="POST">
-                <label for="nombre" >Nombre:</label>
+            <form action="enviar.php" method="POST" class="formContacto">
+                <label for="nombre"  class="label-grande" >Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo electrónico:</label>
+                <label for="email" class="label-grande" >Correo electrónico:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
+                <label for="mensaje" class="label-grande" >Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required ></textarea>
-                <button type="submit" class="buttonGenerar">Enviar mensaje</button>
+                <button type="submit" class="buttonEnviar">Enviar</button>
             </form>
         </section>
+
     </main>
 
     <!-- Footer -->

@@ -42,6 +42,7 @@ main {
 
 footer {
     position: relative;
+    bottom: 0;
 
 }
 .titulos {
@@ -67,12 +68,15 @@ footer {
 
 /*Nav Mobile */
 .sidenav li:nth-child(1) { /*primer hijo nav*/
-    margin-top: 70px;
+    margin-top: 120px ;
+
 }
 
 ul.sidenav li .mobileLinks {
-    margin: 20px auto;
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-top: 20px;
+    background-color: #6f7cbd;
+    border-radius: 5px;
 }
 
 ul.sidenav li .mobileLinks:hover {
@@ -361,7 +365,74 @@ label {
     font-size: .9em;
 }
 
+/*PAG CONTACTO */
 
+.mainContacto {
+    margin: 20px auto;
+}
+.formContacto {
+   width: 70dvw;
+   margin: 50px auto;
+}
+.formContacto {
+    font-size: 1.3em;
+}
+
+.label-grande {
+    font-size: 1.2rem;
+    color: #f34268;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* From uiverse.io by @alshahwan */
+.buttonEnviar{
+    background-color: #fff;
+    border: 1px solid #bc2a8d;
+    padding: 5px;
+    position: relative;
+    width: 7.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .buttonEnviar p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #bc2a8d;
+  }
+  
+  .buttonEnviarsvg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .buttonEnviar:hover p {
+    left: 0.6em;
+    color: #fff
+  }
+  
+  .buttonEnviar:hover svg {
+    opacity: 1;
+  }
+  
+  .buttonEnviar:hover {
+    background-color: #bc2a8d;
+  }
+  
 /*MOBILE*/
 
 @media (300px <=width <=1024px) {
@@ -371,10 +442,11 @@ label {
     }
 
     .buttonGenerar {
-        font-size: 2em;
-        height: auto;
+        font-size: 1.1em;
         min-width: 196px;
-        width: 80vw;
+        padding: 10px;
+        width: 5%;
+        max-width: 50%;
     }
 
     .contenedorNombreColor {
