@@ -36,7 +36,7 @@ p {
 
 main {
     position: relative;
-    top: 50px;
+    top: 120px;
     padding: 50px 0;
     margin-bottom: 100px ;
 }
@@ -67,12 +67,12 @@ footer {
 /*Nav Mobile */
 .sidenav li:nth-child(1) { /*primer hijo nav*/
     margin-top: 120px ;
-
 }
 
 ul.sidenav li .mobileLinks {
     font-size: 1.2em;
-    margin-top: 20px;
+    position: relative;
+    top: 40px;
     background-color: #6f7cbd;
     border-radius: 5px;
 }
@@ -85,7 +85,8 @@ ul.sidenav li .mobileLinks:hover {
     width: 40vw!important;
 }
 .fa-bars { /*barradesplegable responsive*/
-    font-size: 1.5em!important;
+    font-size: 2em!important;
+    margin: auto;
     margin: auto;
 }
 .nav-wrapper  {
