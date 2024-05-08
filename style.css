@@ -35,11 +35,15 @@ p {
 }
 
 main {
-    background-color: #f5ecd0;
-    position: absolute;
-    top: 25px;
+    position: relative;
+    top: 50px;
+    padding: 50px 0;
 }
 
+footer {
+    position: relative;
+
+}
 .titulos {
     color: #b55bcc;
     text-align: center;
@@ -79,7 +83,7 @@ ul.sidenav li .mobileLinks:hover {
     width: 40vw!important;
 }
 .fa-bars { /*barradesplegable responsive*/
-    font-size: 1.4em!important;
+    font-size: 1.5em!important;
     margin: auto;
 }
 .nav-wrapper  {
@@ -92,11 +96,12 @@ nav {
     /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
 }
 
-
+label {
+    font-size: 1em;
+}
 
 /* COLORES */
 .secccionInfoColores {
-    background-color: #f5ecd0;
     padding: 10px;
 }
 
@@ -162,16 +167,18 @@ nav {
 }
 
 /* boton */
+.contenedorPrincipal {
+    width: 100%;
+    padding: 30px;
+}
+
 .contenedorBoton {
-    display: flex;
+    margin: 50px;
+    display: flex; 
     justify-content: center;
-    padding: 10px;
-    width: 100vw;
-    flex-wrap: wrap;
 }
 
 .buttonGenerar {
-    align-items: center;
     background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border: 0;
     border-radius: 8px;
@@ -181,11 +188,11 @@ nav {
     font-family: "Mukta", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
     justify-content: center;
     line-height: 1em;
-    max-width: 100%;
-    min-width: 140px;
+    max-width: 50%;
+    min-width: 100px;
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
@@ -197,13 +204,10 @@ nav {
 }
 
 
-
-
 .contenedorPaletaCompleta {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     margin: 20px auto;
 }
 
@@ -230,36 +234,16 @@ nav {
 
 
 
-/*   JS  */
+/*   PAG HISTORIA JS  */
 
-.mainPagJs {
-    background-color: #f5ecd0;
-}
-
-.contenedorMain {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.videoContainer {
-    text-align: center;
-    height: 60dvh;
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-    width: 95vw;
-
-}
 
 .videoFHD iframe {
+    object-fit: cover;
+    height: 600px;
+    width: 100dvw;
     object-fit: contain;
-    height: 100%;
-    width: 100%;
     border-radius: 5px;
-    justify-content: center;
+    margin: 30px;
 }
 
 .animate__lightSpeedInLeft {
@@ -422,9 +406,6 @@ nav {
         display: block;
     }
 
-    .videoFHD {
-        width: 100%;
-    }
 
     .listaDeLinks>li {
         padding: 10px;
@@ -432,5 +413,8 @@ nav {
 
     .cajaInformativaRecursos {
         display: block;
+    }
+    .videoFHD iframe {
+        height: 400px;
     }
 }
