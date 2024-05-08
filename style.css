@@ -36,6 +36,8 @@ p {
 
 main {
     background-color: #f5ecd0;
+    position: absolute;
+    top: 25px;
 }
 
 .titulos {
@@ -75,6 +77,10 @@ ul.sidenav li .mobileLinks:hover {
 }
 .sidenav   {
     width: 40vw!important;
+}
+.fa-bars { /*barradesplegable responsive*/
+    font-size: 1.4em!important;
+    margin: auto;
 }
 .nav-wrapper  {
     height: 7vh!important;
