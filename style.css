@@ -239,17 +239,18 @@ ul.sidenav li .mobileLinks:hover {
 
 .videoContainer {
     text-align: center;
-    height: 50dvh;
+    height: 60dvh;
     display: flex;
     justify-content: center;
     margin: 20px auto;
+    width: 95vw;
+
 }
 
 .videoFHD iframe {
-    max-width: 100%;
-    max-height: 100%;
     object-fit: contain;
-    height: 90%;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     justify-content: center;
 }
