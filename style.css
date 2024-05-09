@@ -2,13 +2,17 @@
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
 }
 
-p {
-    font-size: 1em;
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
 }
 
 .colorLinkBlanco {
@@ -39,11 +43,13 @@ main {
     top: 120px;
     padding: 50px 0;
     margin-bottom: 100px ;
+    width: 100vw;
 }
 
 footer {
     position: relative;
     bottom: 0;
+    width: 100vw;
 }
 .titulos {
     color: #b55bcc;
@@ -93,12 +99,7 @@ ul.sidenav li .mobileLinks:hover {
 .nav-wrapper  {
     height: 7vh!important;
 }
-nav {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    /* Ajusta el valor de z-index para asegurar que esté en la capa superior */
-}
+
 
 label {
     font-size: 1em;
@@ -233,9 +234,9 @@ label {
 .footer-copyright {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: .7em;
+    border: 3px solid red;
 }
-
-
 
 
 /*   PAG HISTORIA JS  */
@@ -477,7 +478,6 @@ label {
     .contenedorSeccionVideos {
         display: block;
     }
-
 
     .listaDeLinks>li {
         padding: 10px;
